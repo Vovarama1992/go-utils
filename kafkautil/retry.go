@@ -1,3 +1,4 @@
+// kafkautil/retry.go
 package kafkautil
 
 import (
@@ -5,8 +6,8 @@ import (
 )
 
 type RetryConfig struct {
-	Attempts int
-	Delay    time.Duration
+	Attempts int           // макс. попыток
+	Delay    time.Duration // задержка между попытками
 }
 
 type Retry struct {
